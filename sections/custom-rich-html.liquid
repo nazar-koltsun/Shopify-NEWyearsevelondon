@@ -1,0 +1,80 @@
+{% style %}
+  .custom-rich-html {
+    padding-top: 36px;
+    padding-bottom: 24px;
+  }
+
+  .custom-rich-html__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .rte blockquote {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .custom-rich-html__blocks {
+    width: 100%;
+  }
+
+  table {
+    display: inline-table;
+  }
+
+  @media screen and (min-width: 750px) { 
+    .custom-rich-html__blocks {
+        max-width: 50rem;
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .custom-rich-html__blocks {
+        max-width: 78rem;
+    }
+  }
+{% endstyle %}
+
+<div class="custom-rich-html">
+  <div class="custom-rich-html__wrapper page-width">
+    <div class="custom-rich-html__blocks center">
+      {% assign custom_content = blank %}
+
+      {% if collection and collection.metafields.custom.html_content.value != blank %}
+        {% assign custom_content = collection.metafields.custom.html_content.value %}
+
+      {% elsif page and page.metafields.custom.html_content.value != blank %}
+        {% assign custom_content = page.metafields.custom.html_content.value %}
+      {% endif %}
+
+      <div class="rte scroll-trigger animate--slide-in">
+        {% if custom_content != blank %}
+          {{ custom_content }}
+        {% else %}
+          {{ section.settings.html_content }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Rich HTML",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "html_content",
+      "label": "HTML content",
+      "info": "Paste full HTML here (only inner content, not wrappers). If a collection metafield 'HTML Content' is populated, it will override the HTML content above."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Rich HTML"
+    }
+  ]
+}
+{% endschema %}

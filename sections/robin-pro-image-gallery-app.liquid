@@ -1,0 +1,65 @@
+{% for block in section.blocks %}
+  <div {{ block.shopify_attributes }}>
+    <div class="robin-pro {% if block.settings.width == 'page' %}page-width{% endif %}" id="{{ block.settings.gallery_id }}"></div>
+  </div>
+{% endfor %}
+
+{% schema %}
+  {
+    "name": "Robin PRO Image Gallery",
+    "blocks": [
+      {
+        "type": "gallery",
+        "name": "Gallery",
+        "settings": [
+          {
+            "label": "Gallery",
+            "type": "select",
+            "id": "gallery_id",
+            "options": [
+{
+  "value": "6b610493-cbec-47de-a4e3-420882beb6ad",
+  "label": "New Year's Eve Masquerade Ball The Londone..."
+},
+{
+  "value": "39696ddb-1f44-4962-88db-757ac8bbf18d",
+  "label": "New Year's Eve Masquerade Ball The Londone..."
+},
+{
+  "value": "f14afcf3-72c6-4383-a211-9b1387e41ccf",
+  "label": "New Years Eve Masquerade Ball The Dorchest..."
+},
+{
+  "value": "1015ee0a-a05a-4aee-97fa-5975b316cc87",
+  "label": "New Years Eve Masquerade Ball The Dorchest..."
+}
+            ]
+          },
+          {
+            "type": "radio",
+            "id": "width",
+            "label": "Width",
+            "options": [
+              {
+                "value": "page",
+                "label": "Page width"
+              },
+              {
+                "value": "full",
+                "label": "Full width"
+              }
+            ],
+            "default": "page"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Robin PRO Image Gallery",
+        "category": "Robin PRO Image Gallery App",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}

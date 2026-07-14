@@ -1,0 +1,20 @@
+{% comment %}
+    Danger! We reset this file when the theme is changed.
+    We reccomend adjusting the styles via CSS if possible. 
+{% endcomment %}
+
+<div class="eca-shopify-product-container">
+    <div class="eca-app-container" data-type="shopify-product" data-shopifyproductid="{{ product.id }}"></div>
+</div>
+
+
+<script>
+    (function () {
+        window.eventCalId = 16963;
+        var integrationScript = document.createElement("script");
+        integrationScript.async = 1;
+        integrationScript.setAttribute("src", "https://api.eventcalendarapp.com/integration-script.js");
+        document.head.appendChild(integrationScript);
+    })();
+</script>
+

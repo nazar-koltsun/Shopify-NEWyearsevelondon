@@ -1,0 +1,254 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_bAGLFn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_W9JpN8": {
+          "type": "heading",
+          "settings": {
+            "heading": "New Year’s Eve London 2025 | VIP Fireworks Viewing Experience at The Londoner",
+            "heading_size": "h2"
+          }
+        },
+        "text_cUmkjg": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Celebrate New Year’s Eve 2025 in luxury with a completely private Signature Suite fireworks experience at The Londoner Hotel, exclusively for one group of 8 to 24 guests</strong>.<br/><br/></p>"
+          }
+        },
+        "button_6R3cXN": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_W9JpN8",
+        "text_cUmkjg",
+        "button_6R3cXN"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 24
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "collapsible_tab_p4b7C3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Event Highlights",
+            "icon": "question_mark",
+            "content": "<p><strong>Date: </strong>31st December 2025</p><p><strong>Party Only Entrance: </strong>21:30</p><p><strong>Doors Close: </strong>23:55<strong>, Party Ends:</strong> 02:30</p><p><strong>Location:</strong> The Londoner Hotel, Leicester Square, London, WC2H 7DX</p><p><strong>Capacity:</strong> 700 guests across two stunning floors – The Ballroom, and The Gallery (there is no access to the Rooftop)</p><p><strong>Entertainment:</strong> Live performances, entertainment, and DJ sets. </p><p><strong>Accommodation:</strong> Hotel Rooms are available to purchase in advance when purchasing tickets<br/><br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_nYP3mU": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Seating",
+            "icon": "question_mark",
+            "content": "<p><em><strong>Q. How many guests are there per table?</strong></em></p><p><em>A. Each table seats 12 guests</em></p><p><em><strong>Q. I have purchased my ticket separately from friends?</strong></em></p><p><em>A. Please email your order ID's to support@newyearsevelondon.co.uk and we will ensure you are sat together</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_ekCiPY": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Dietary Requirements",
+            "icon": "question_mark",
+            "content": "<p><em>Please advise us of any dietary requirements and/or allergens by emailing: support@newyearsevelondon.co.uk</em></p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_Awd97V": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Terms & Conditions",
+            "icon": "question_mark",
+            "content": "<p><em>The Londoner will be operating a card only bar for the duration of the evening.</em></p><p><em><strong>Silver Guests receive </strong></em><strong>complimentary </strong><em><strong>House Wines during dinner service.</strong></em></p><p><em><strong>Gold & Platinum Dinner Guests receive complimentary Champagne, Beer and House Wines during dinner service.</strong></em></p><p><em><strong>Please note, late arriving dinner guests after 8.10pm will miss out on certain dinner courses and no alternative will be offered.</strong></em></p><p><em>There is no access to the Hotel's rooftop.</em></p><p><em>This event is 18+. I.D will be required on the door.</em></p><p><em><strong>Last Entry Strictly at 23:55</strong></em></p><p><em>Our Masquerade Event has limited availability; tickets must be pre-booked in advance and pre-payment is required. </em></p><p><em><strong>Tickets are strictly non-refundable under any circumstances.</strong></em></p>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "description",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "collapsible_tab_p4b7C3",
+        "collapsible_tab_nYP3mU",
+        "collapsible_tab_ekCiPY",
+        "collapsible_tab_Awd97V",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "hover",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "multicolumn_49cMCM": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_rYc7a9": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UtxbJx": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Party Only Tickets include:</p><ul><li>Doors open from 21:30</li><li>Access to the Ballroom (after dinner service) and the Gallery</li><li>Unlimited still and sparkling water</li><li><strong>LAST ENTRY: STRICTLY 23:55</strong></li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_rYc7a9",
+        "column_UtxbJx"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "quick_order_list_T6thdw": {
+      "type": "quick-order-list",
+      "disabled": true,
+      "settings": {
+        "show_image": false,
+        "show_sku": false,
+        "color_scheme": "",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "Upgrade your night",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    }
+  },
+  "order": [
+    "rich_text_bAGLFn",
+    "main",
+    "multicolumn_49cMCM",
+    "quick_order_list_T6thdw",
+    "related-products"
+  ]
+}
