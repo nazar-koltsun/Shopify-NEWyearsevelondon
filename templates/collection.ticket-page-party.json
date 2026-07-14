@@ -1,1 +1,201 @@
-{"sections":{"rich_text_FFyTRR":{"type":"rich-text","blocks":{"heading_PQNWVG":{"type":"heading","settings":{"heading":"New Year's Eve Masquerade Ball and Party 2025","heading_size":"h2"}},"text_netq6j":{"type":"text","settings":{"text":"<p>We are thrilled to host the second edition of our legendary New Year's Eve event at The 5 Star Londoner Hotel. This grand celebration promises to be an unforgettable experience, combining elegance, excitement, and glamour in one of London’s most iconic locations set over 2 floors for 700 guests.<\/p>"}}},"block_order":["heading_PQNWVG","text_netq6j"],"disabled":true,"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"","full_width":true,"padding_top":40,"padding_bottom":24}},"banner":{"type":"main-collection-banner","disabled":true,"settings":{"show_collection_description":false,"show_collection_image":false,"color_scheme":"scheme-1"}},"product-grid":{"type":"main-collection-product-grid","disabled":true,"settings":{"products_per_page":16,"columns_desktop":3,"color_scheme":"scheme-1","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"quick_add":"standard","enable_filtering":false,"filter_type":"horizontal","enable_sorting":false,"columns_mobile":"2","padding_top":24,"padding_bottom":24}},"rich_text_hKLBem":{"type":"rich-text","blocks":{"heading_DDymXT":{"type":"heading","settings":{"heading":"Drinks Packages","heading_size":"h2"}},"text_9Qm6X6":{"type":"text","settings":{"text":"<p>xxxxxxxxxxxxxxxxxxxxxxxxxxx<\/p>"}}},"block_order":["heading_DDymXT","text_9Qm6X6"],"disabled":true,"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"","full_width":true,"padding_top":40,"padding_bottom":24}},"featured_collection_idDjga":{"type":"featured-collection","disabled":true,"settings":{"title":"","heading_size":"h2","description":"","show_description":false,"description_style":"body","collection":"the-londoner-2025","products_to_show":12,"columns_desktop":4,"full_width":false,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":true,"color_scheme":"","image_ratio":"adapt","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"quick_add":"standard","columns_mobile":"2","swipe_on_mobile":true,"padding_top":24,"padding_bottom":24}},"rich_text_4xeAgP":{"type":"rich-text","blocks":{"heading_fnz4PT":{"type":"heading","settings":{"heading":"<strong>Party Only Tickets – The Londoner Hotel, Leicester Square<\/strong>","heading_size":"h2"}},"text_ARfgt7":{"type":"text","settings":{"text":"<p><strong>Arrive from 21:30<\/strong> and step straight into the <strong>New Year’s Eve Masquerade Party at The Londoner Hotel<\/strong>, London’s most exclusive celebration in the heart of the West End.<\/p><p>Experience the electric atmosphere across two floors — the <strong>Ballroom<\/strong> (after-dinner) and <strong>The Gallery (Chillout Room)<\/strong> — featuring <strong>live DJs, immersive performances, and midnight celebrations<\/strong> streamed from Big Ben. <\/p><p>Enjoy a night of luxury with <strong>entertainment, dancing, and midnight snacks<\/strong> served as the countdown begins.<\/p><p><strong>Party until 02:30am<\/strong> at London’s premier New Year’s Eve after-dinner celebration.<br\/><br\/><strong>Last Entry: 23:55<\/strong><\/p>"}}},"block_order":["heading_fnz4PT","text_ARfgt7"],"disabled":true,"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"","full_width":true,"padding_top":24,"padding_bottom":24}},"custom_rich_html_id4dYy":{"type":"custom-rich-html","name":"Custom Rich HTML","settings":{"html_content":""}},"featured_collection_kckVhc":{"type":"featured-collection","settings":{"title":"","heading_size":"h2","description":"","show_description":false,"description_style":"body","collection":"new-years-eve-at-the-londoner-2026","products_to_show":4,"columns_desktop":3,"full_width":false,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":true,"color_scheme":"","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"quick_add":"standard","columns_mobile":"2","swipe_on_mobile":false,"padding_top":24,"padding_bottom":24}}},"order":["rich_text_FFyTRR","banner","product-grid","rich_text_hKLBem","featured_collection_idDjga","rich_text_4xeAgP","custom_rich_html_id4dYy","featured_collection_kckVhc"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_FFyTRR": {
+      "type": "rich-text",
+      "blocks": {
+        "text_netq6j": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The 2025 event is sold out. <a href=\"https://www.newyearsevelondon.co.uk/\" title=\"New Year's Eve London 2026\">New Year's Eve London 2026 </a>tickets are now on sale.<br/>Full breakdown of each <a href=\"https://www.newyearsevelondon.co.uk/collections/the-londoner-all-tickets\">ticket tier </a>below. Total capacity: 700 guests (360 dinner, 340 <a href=\"https://www.newyearsevelondon.co.uk/collections/the-londoner-after-party\">after-party</a>). Questions? Email <a href=\"mailto:support@newyearsevelondon.co.uk\">support@newyearsevelondon.co.uk</a>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_netq6j"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 24
+      }
+    },
+    "featured_collection_kckVhc": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-years-eve-at-the-londoner-2026",
+        "products_to_show": 4,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "columns_mobile": "2",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "rich_text_hKLBem": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_DDymXT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Drinks Packages",
+            "heading_size": "h2"
+          }
+        },
+        "text_9Qm6X6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>xxxxxxxxxxxxxxxxxxxxxxxxxxx</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DDymXT",
+        "text_9Qm6X6"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 24
+      }
+    },
+    "featured_collection_idDjga": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "the-londoner-2025",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "rich_text_4xeAgP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fnz4PT": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Party Only Tickets – The Londoner Hotel, Leicester Square</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_ARfgt7": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Arrive from 21:30</strong> and step straight into the <strong>New Year’s Eve Masquerade Party at The Londoner Hotel</strong>, London’s most exclusive celebration in the heart of the West End.</p><p>Experience the electric atmosphere across two floors — the <strong>Ballroom</strong> (after-dinner) and <strong>The Gallery (Chillout Room)</strong> — featuring <strong>live DJs, immersive performances, and midnight celebrations</strong> streamed from Big Ben. </p><p>Enjoy a night of luxury with <strong>entertainment, dancing, and midnight snacks</strong> served as the countdown begins.</p><p><strong>Party until 02:30am</strong> at London’s premier New Year’s Eve after-dinner celebration.<br/><br/><strong>Last Entry: 23:55</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fnz4PT",
+        "text_ARfgt7"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "custom_rich_html_id4dYy": {
+      "type": "custom-rich-html",
+      "name": "Custom Rich HTML",
+      "settings": {
+        "html_content": ""
+      }
+    }
+  },
+  "order": [
+    "rich_text_FFyTRR",
+    "featured_collection_kckVhc",
+    "banner",
+    "product-grid",
+    "rich_text_hKLBem",
+    "featured_collection_idDjga",
+    "rich_text_4xeAgP",
+    "custom_rich_html_id4dYy"
+  ]
+}
