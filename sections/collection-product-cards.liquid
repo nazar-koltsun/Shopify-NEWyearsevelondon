@@ -18,7 +18,10 @@
       <ul class="collection-product-cards__list" role="list">
         {%- for block in section.blocks -%}
           {%- liquid
-            assign book_url = block.settings.button_link
+            assign book_url = blank
+            if block.settings.button_product != blank
+              assign book_url = block.settings.button_product.url
+            endif
             if book_url == blank and block.settings.ticket_product_1 != blank
               assign book_url = block.settings.ticket_product_1.url
             endif
@@ -318,9 +321,9 @@
             "label": "Button label",
             "default": "BOOK NOW"
           }, {
-            "type": "url",
-            "id": "button_link",
-            "label": "Button link",
+            "type": "product",
+            "id": "button_product",
+            "label": "Button product",
             "info": "Leave blank to use the first ticket option product."
           }
         ]

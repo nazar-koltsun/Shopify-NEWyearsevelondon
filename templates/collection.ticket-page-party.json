@@ -54,7 +54,7 @@
             "ticket_label_4": "",
             "ticket_product_4": "",
             "button_label": "BOOK NOW",
-            "button_link": "/products/new-years-eve-at-the-londoner-2025-silver-seating-dinner-and-party-ticket"
+            "button_product": "new-years-eve-at-the-londoner-2025-silver-seating-dinner-and-party-ticket"
           }
         },
         "card_CAGYz7": {
@@ -76,7 +76,7 @@
             "ticket_label_4": "",
             "ticket_product_4": "",
             "button_label": "BOOK NOW",
-            "button_link": ""
+            "button_product": ""
           }
         },
         "card_CHTwGU": {
@@ -98,7 +98,7 @@
             "ticket_label_4": "",
             "ticket_product_4": "",
             "button_label": "BOOK NOW",
-            "button_link": ""
+            "button_product": ""
           }
         },
         "card_8K3AeM": {
@@ -120,7 +120,7 @@
             "ticket_label_4": "",
             "ticket_product_4": "",
             "button_label": "BOOK NOW",
-            "button_link": ""
+            "button_product": ""
           }
         }
       },
