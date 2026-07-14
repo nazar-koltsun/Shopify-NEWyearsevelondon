@@ -42,6 +42,14 @@
   width: 100%;
   height: 400px;
   overflow: hidden;
+
+  @media screen and (max-width: 500px) {
+    height: 300px;
+  }
+
+  @media screen and (max-width: 420px) {
+    height: 250px;
+  }
 }
 
 .collection-product-cards__badge {
@@ -97,6 +105,10 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 1.3;
+
+  @media screen and (max-width: 500px) {
+    margin: 0;
+  }
 }
 
 .collection-product-cards__subtitle {
@@ -104,11 +116,53 @@
   font-size: 18px;
   line-height: 1.4;
   color: #c27c2a;
+
+  @media screen and (max-width: 500px) {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.2;
+  }
 }
 
 .collection-product-cards__features {
   margin: 1.6rem 0 0;
   text-align: left;
+}
+
+.collection-product-cards__features-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  list-style: none;
+}
+
+.collection-product-cards__features-heading::-webkit-details-marker {
+  display: none;
+}
+
+.collection-product-cards__features-heading .icon-caret {
+  position: static;
+  flex-shrink: 0;
+  width: 1rem;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.collection-product-cards__features[open]
+  > .collection-product-cards__features-heading
+  .icon-caret {
+  transform: rotate(180deg);
+}
+
+.collection-product-cards__features-content {
+  margin-top: 0.8rem;
 }
 
 .collection-product-cards__features ul {
@@ -164,7 +218,6 @@
   text-align: left;
 }
 
-.collection-product-cards__features-heading,
 .collection-product-cards__ticket-heading {
   margin: 0 0 0.8rem;
   font-size: 1.4rem;
@@ -240,5 +293,17 @@
 @media screen and (max-width: 749px) {
   .collection-product-cards__body {
     padding: 1.6rem 1.2rem 2rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .collection-product-cards__features-heading {
+    margin-bottom: 0.8rem;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .collection-product-cards__features-heading .icon-caret {
+    display: none;
   }
 }

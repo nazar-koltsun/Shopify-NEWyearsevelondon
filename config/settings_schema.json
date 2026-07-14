@@ -1465,5 +1465,29 @@
         "default": "scheme-1"
       }
     ]
+  },
+  {
+    "name": "Sticky Book Now",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "sticky_book_now_enable",
+        "label": "Enable sticky Book Now bar",
+        "info": "Shows a fixed Book Now button at the bottom on mobile. Hidden on the ticket-page-party collection template.",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "sticky_book_now_label",
+        "label": "Button label",
+        "default": "Book Now"
+      },
+      {
+        "type": "url",
+        "id": "sticky_book_now_link",
+        "label": "Collection link",
+        "info": "Link to the collection page. Leave blank to hide the bar."
+      }
+    ]
   }
 ]

@@ -115,14 +115,21 @@
                 {%- endif -%}
 
                 {%- if block.settings.features != blank -%}
-                  <div class="collection-product-cards__features rte">
-                    {%- if block.settings.features_heading != blank -%}
-                      <p class="collection-product-cards__features-heading">
-                        {{ block.settings.features_heading | escape }}
-                      </p>
-                    {%- endif -%}
-                    {{ block.settings.features }}
-                  </div>
+                  {%- if block.settings.features_heading != blank -%}
+                    <details class="collection-product-cards__features rte">
+                      <summary class="collection-product-cards__features-heading">
+                        <span>{{ block.settings.features_heading | escape }}</span>
+                        {% render 'icon-caret' %}
+                      </summary>
+                      <div class="collection-product-cards__features-content">
+                        {{ block.settings.features }}
+                      </div>
+                    </details>
+                  {%- else -%}
+                    <div class="collection-product-cards__features rte">
+                      {{ block.settings.features }}
+                    </div>
+                  {%- endif -%}
                 {%- endif -%}
 
                 {%- if has_ticket_options -%}
@@ -206,6 +213,23 @@
   </div>
 </div>
 
+<script>
+  (() => {
+    const section = document.getElementById('shopify-section-{{ section.id }}');
+    if (!section) return;
+
+    const mediaQuery = window.matchMedia('(min-width: 750px)');
+    const syncFeaturesAccordions = () => {
+      section.querySelectorAll('details.collection-product-cards__features').forEach((details) => {
+        details.open = mediaQuery.matches;
+      });
+    };
+
+    syncFeaturesAccordions();
+    mediaQuery.addEventListener('change', syncFeaturesAccordions);
+  })();
+</script>
+
 {% schema %}
   {
     "name": "Collection product cards",
@@ -260,7 +284,7 @@
             "type": "text",
             "id": "features_heading",
             "label": "Features heading",
-            "default": "What's included"
+            "default": "What's included:"
           }, {
             "type": "richtext",
             "id": "features",
@@ -339,7 +363,7 @@
               "title": "New Year's Eve London 2026 | Silver Dinner & Party Ticket at The Londoner",
               "price": "£395.00",
               "subtitle": "Early Bird price — ends 31 July. £425 from 1 August.",
-              "features_heading": "What's included",
+              "features_heading": "What's included:",
               "features": "<ul><li>Two glasses of Moët Chandon and hot cold canapés on arrival (from 7:00pm)</li><li>Three-course gala dinner in the Ballroom (served from 8:15pm)</li><li>Free-flowing house red white wine during dinner (until dessert is served)</li><li>Unlimited still sparkling water throughout the evening</li><li>Live band (The Bando), DJ sets and live performances</li><li>Big Ben midnight countdown on 4x6m LED screens</li><li>Midnight snacks</li><li>Party until 2:30am</li></ul>",
               "ticket_options_heading": "Ticket options:",
               "ticket_label_1": "Silver Dinner & Party Ticket for 2 Guests",
@@ -353,7 +377,7 @@
               "badge": "Most Popular",
               "price": "£545.00",
               "subtitle": "Early Bird price — ends 31 July. £575 from 1 August.",
-              "features_heading": "What's included",
+              "features_heading": "What's included:",
               "features": "<ul><li>Premium Ballroom seating, closer to the dancefloor</li><li>Full table waiter drinks service during dinner</li><li>Complimentary drinks during dinner: champagne, beer, and premium red white wine (until dessert is served)</li></ul>",
               "ticket_options_heading": "Ticket options:",
               "ticket_label_1": "Gold Dinner & Party Tickets for 2 Guests",
@@ -367,7 +391,7 @@
               "badge": "Best Seats",
               "price": "£595.00",
               "subtitle": "Early Bird price — ends 31 July. £625 from 1 August.",
-              "features_heading": "What's included",
+              "features_heading": "What's included:",
               "features": "<ul><li>The finest seating positions in the Ballroom — closest to the dancefloor and the stage</li></ul>",
               "ticket_options_heading": "Ticket options:",
               "ticket_label_1": "Platinum Dinner & Party Tickets for 2 Guests",
@@ -380,7 +404,7 @@
               "title": "After Party Only Ticket",
               "price": "145.00",
               "subtitle": "",
-              "features_heading": "What's included",
+              "features_heading": "What's included:",
               "features": "<ul><li>Entry from 9:30pm (last entry strictly 11:55pm)</li><li>A glass of sparkling wine on arrival</li><li>Access to the Ballroom and The Gallery</li><li>Live DJs and the Big Ben midnight countdown on 4x6m LED screens</li><li>Midnight snacks</li><li>Unlimited still sparkling water</li><li>Party until 2:30am</li></ul>",
               "button_label": "BOOK NOW"
             }

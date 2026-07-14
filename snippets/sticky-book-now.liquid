@@ -1,0 +1,15 @@
+{%- liquid
+  assign hide_sticky_book_now = false
+  if template.name == 'collection' and template.suffix == 'ticket-page-party'
+    assign hide_sticky_book_now = true
+  endif
+-%}
+{%- if settings.sticky_book_now_enable and settings.sticky_book_now_link != blank and hide_sticky_book_now == false -%}
+  {{ 'sticky-book-now.css' | asset_url | stylesheet_tag }}
+
+  <div class="sticky-book-now" role="region" aria-label="{{ settings.sticky_book_now_label | escape }}">
+    <a class="sticky-book-now__button" href="{{ settings.sticky_book_now_link }}">
+      {{ settings.sticky_book_now_label | escape }}
+    </a>
+  </div>
+{%- endif -%}

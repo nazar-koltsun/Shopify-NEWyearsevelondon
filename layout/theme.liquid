@@ -406,7 +406,13 @@
     {% endif %}
   </head>
 
-  <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+  {%- liquid
+    assign hide_sticky_book_now = false
+    if template.name == 'collection' and template.suffix == 'ticket-page-party'
+      assign hide_sticky_book_now = true
+    endif
+  -%}
+  <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}{% if settings.sticky_book_now_enable and settings.sticky_book_now_link != blank and hide_sticky_book_now == false %} sticky-book-now-enabled{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
@@ -434,6 +440,8 @@
     </main>
 
     {% sections 'footer-group' %}
+
+    {% render 'sticky-book-now' %}
 
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>

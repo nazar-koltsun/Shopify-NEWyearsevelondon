@@ -9,86 +9,6 @@
  */
 {
   "sections": {
-    "collection_product_cards": {
-      "type": "collection-product-cards",
-      "blocks": {
-        "card_silver": {
-          "type": "card",
-          "settings": {
-            "title": "SILVER",
-            "price": "From £295",
-            "subtitle": "Early Bird ends 31 July",
-            "features_heading": "What's included",
-            "features": "<ul><li>Welcome drink</li><li>Three-course dinner</li><li>Live entertainment</li></ul>",
-            "ticket_options_heading": "Ticket options:",
-            "ticket_label_1": "Couple (2)",
-            "ticket_label_2": "Table of 12",
-            "ticket_label_3": "",
-            "ticket_label_4": "",
-            "button_label": "BOOK NOW"
-          }
-        },
-        "card_gold": {
-          "type": "card",
-          "settings": {
-            "badge": "Most Popular",
-            "title": "GOLD",
-            "price": "From £395",
-            "subtitle": "Early Bird ends 31 July",
-            "features_heading": "What's included",
-            "features": "<ul><li>Champagne reception</li><li>Three-course dinner</li><li>Premium seating</li></ul>",
-            "ticket_options_heading": "Ticket options:",
-            "ticket_label_1": "Couple (2)",
-            "ticket_label_2": "Table of 12",
-            "ticket_label_3": "",
-            "ticket_label_4": "",
-            "button_label": "BOOK NOW"
-          }
-        },
-        "card_platinum": {
-          "type": "card",
-          "settings": {
-            "badge": "Best Seats",
-            "title": "PLATINUM",
-            "price": "From £495",
-            "subtitle": "Early Bird ends 31 July",
-            "features_heading": "What's included",
-            "features": "<ul><li>Champagne reception</li><li>Premium dining</li><li>Best seats & waiter service</li></ul>",
-            "ticket_options_heading": "Ticket options:",
-            "ticket_label_1": "Couple (2)",
-            "ticket_label_2": "Table of 12",
-            "ticket_label_3": "",
-            "ticket_label_4": "",
-            "button_label": "BOOK NOW"
-          }
-        },
-        "card_party": {
-          "type": "card",
-          "settings": {
-            "title": "PARTY ONLY",
-            "price": "From £145",
-            "subtitle": "Early Bird ends 31 July",
-            "features_heading": "What's included",
-            "features": "<ul><li>Entry from 21:30</li><li>Midnight snacks</li><li>Live entertainment</li></ul>",
-            "ticket_options_heading": "Ticket options:",
-            "ticket_label_1": "Couple (2)",
-            "ticket_label_2": "Table of 12",
-            "ticket_label_3": "",
-            "ticket_label_4": "",
-            "button_label": "BOOK NOW"
-          }
-        }
-      },
-      "block_order": [
-        "card_silver",
-        "card_gold",
-        "card_platinum",
-        "card_party"
-      ],
-      "settings": {
-        "title": "Ticket packages"
-      }
-    },
     "custom_rich_html_694Rtb": {
       "type": "custom-rich-html",
       "name": "Custom Rich HTML",
@@ -280,7 +200,6 @@
     }
   },
   "order": [
-    "collection_product_cards",
     "custom_rich_html_694Rtb",
     "banner",
     "rich_text_FFyTRR",
