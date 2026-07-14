@@ -1,1 +1,293 @@
-{"sections":{"custom_rich_html_694Rtb":{"type":"custom-rich-html","name":"Custom Rich HTML","settings":{"html_content":""}},"banner":{"type":"main-collection-banner","disabled":true,"settings":{"show_collection_description":false,"show_collection_image":false,"color_scheme":"scheme-1"}},"rich_text_FFyTRR":{"type":"rich-text","blocks":{"heading_PQNWVG":{"type":"heading","settings":{"heading":"<strong>New Year's Eve Masquerade Ball and Party 2025 at The Londoner Hotel<\/strong>","heading_size":"h2"}},"text_netq6j":{"type":"text","settings":{"text":"<p>We are excited to announce the inaugural New Year's Eve Masquerade Ball and Party at the prestigious 5-star Londoner Hotel on 31st December 2025. This extraordinary event promises a night of unparalleled elegance, excitement, and glamour, set in one of London's most iconic locations. Spread across two luxurious floors, the celebration will accommodate 700 guests, offering a truly unforgettable experience to welcome the New Year.<\/p>"}}},"block_order":["heading_PQNWVG","text_netq6j"],"disabled":true,"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"","full_width":true,"padding_top":40,"padding_bottom":24}},"rich_text_4xeAgP":{"type":"rich-text","blocks":{"heading_fnz4PT":{"type":"heading","settings":{"heading":"After Party Only Tickets","heading_size":"h2"}},"text_ARfgt7":{"type":"text","settings":{"text":"<p>For those looking to join the exclusive New Year's Eve Masquerade Ball at the 5-star Londoner Hotel after dinner, we are thrilled to offer a limited number of guests access to our After Party. <\/p><p>Starting at 21:30 (without dinner), guests can enjoy The Green Room nightclub, The Ballroom post-dinner service, and The Gallery until 2:30am. Doors close strictly at 23:55<\/p>"}}},"block_order":["heading_fnz4PT","text_ARfgt7"],"disabled":true,"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"","full_width":true,"padding_top":24,"padding_bottom":24}},"featured_collection_kckVhc":{"type":"featured-collection","disabled":true,"settings":{"title":"","heading_size":"h2","description":"","show_description":false,"description_style":"body","collection":"new-years-eve-at-the-londoner-2025","products_to_show":25,"columns_desktop":3,"full_width":false,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":true,"color_scheme":"","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"quick_add":"standard","columns_mobile":"2","swipe_on_mobile":true,"padding_top":24,"padding_bottom":24}},"product-grid":{"type":"main-collection-product-grid","disabled":true,"settings":{"products_per_page":16,"columns_desktop":3,"color_scheme":"scheme-1","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"quick_add":"none","enable_filtering":false,"filter_type":"horizontal","enable_sorting":false,"columns_mobile":"2","padding_top":24,"padding_bottom":24}},"rich_text_hKLBem":{"type":"rich-text","blocks":{"heading_DDymXT":{"type":"heading","settings":{"heading":"Drinks Packages","heading_size":"h2"}},"text_9Qm6X6":{"type":"text","settings":{"text":"<p>xxxxxxxxxxxxxxxxxxxxxxxxxxx<\/p>"}}},"block_order":["heading_DDymXT","text_9Qm6X6"],"disabled":true,"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"","full_width":true,"padding_top":40,"padding_bottom":24}},"featured_collection_c9F6xh":{"type":"featured-collection","disabled":true,"name":"t:sections.featured-collection.presets.name","settings":{"title":"","heading_size":"h1","description":"","show_description":false,"description_style":"body","collection":"the-londoner-2025","products_to_show":25,"columns_desktop":4,"full_width":false,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":false,"color_scheme":"","image_ratio":"adapt","image_shape":"default","show_secondary_image":false,"show_vendor":false,"show_rating":false,"quick_add":"none","columns_mobile":"2","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}}},"order":["custom_rich_html_694Rtb","banner","rich_text_FFyTRR","rich_text_4xeAgP","featured_collection_kckVhc","product-grid","rich_text_hKLBem","featured_collection_c9F6xh"]}
+{
+  "sections": {
+    "collection_product_cards": {
+      "type": "collection-product-cards",
+      "blocks": {
+        "card_silver": {
+          "type": "card",
+          "settings": {
+            "title": "SILVER",
+            "price": "From £295",
+            "subtitle": "Early Bird ends 31 July",
+            "features_heading": "What's included",
+            "features": "<ul><li>Welcome drink</li><li>Three-course dinner</li><li>Live entertainment</li></ul>",
+            "ticket_options_heading": "Ticket options:",
+            "ticket_label_1": "Couple (2)",
+            "ticket_label_2": "Table of 12",
+            "ticket_label_3": "",
+            "ticket_label_4": "",
+            "button_label": "BOOK NOW"
+          }
+        },
+        "card_gold": {
+          "type": "card",
+          "settings": {
+            "title": "GOLD",
+            "badge": "Most Popular",
+            "price": "From £395",
+            "subtitle": "Early Bird ends 31 July",
+            "features_heading": "What's included",
+            "features": "<ul><li>Champagne reception</li><li>Three-course dinner</li><li>Premium seating</li></ul>",
+            "ticket_options_heading": "Ticket options:",
+            "ticket_label_1": "Couple (2)",
+            "ticket_label_2": "Table of 12",
+            "ticket_label_3": "",
+            "ticket_label_4": "",
+            "button_label": "BOOK NOW"
+          }
+        },
+        "card_platinum": {
+          "type": "card",
+          "settings": {
+            "title": "PLATINUM",
+            "badge": "Best Seats",
+            "price": "From £495",
+            "subtitle": "Early Bird ends 31 July",
+            "features_heading": "What's included",
+            "features": "<ul><li>Champagne reception</li><li>Premium dining</li><li>Best seats & waiter service</li></ul>",
+            "ticket_options_heading": "Ticket options:",
+            "ticket_label_1": "Couple (2)",
+            "ticket_label_2": "Table of 12",
+            "ticket_label_3": "",
+            "ticket_label_4": "",
+            "button_label": "BOOK NOW"
+          }
+        },
+        "card_party": {
+          "type": "card",
+          "settings": {
+            "title": "PARTY ONLY",
+            "price": "From £145",
+            "subtitle": "Early Bird ends 31 July",
+            "features_heading": "What's included",
+            "features": "<ul><li>Entry from 21:30</li><li>Midnight snacks</li><li>Live entertainment</li></ul>",
+            "ticket_options_heading": "Ticket options:",
+            "ticket_label_1": "Couple (2)",
+            "ticket_label_2": "Table of 12",
+            "ticket_label_3": "",
+            "ticket_label_4": "",
+            "button_label": "BOOK NOW"
+          }
+        }
+      },
+      "block_order": [
+        "card_silver",
+        "card_gold",
+        "card_platinum",
+        "card_party"
+      ],
+      "settings": {
+        "title": "Ticket packages",
+        "heading_size": "h1",
+        "card_heading_size": "h2",
+        "columns_desktop": 4,
+        "columns_mobile": "1",
+        "image_ratio": "square",
+        "background_style": "primary",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_rich_html_694Rtb": {
+      "type": "custom-rich-html",
+      "name": "Custom Rich HTML",
+      "settings": {
+        "html_content": ""
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "rich_text_FFyTRR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PQNWVG": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>New Year's Eve Masquerade Ball and Party 2025 at The Londoner Hotel</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_netq6j": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are excited to announce the inaugural New Year's Eve Masquerade Ball and Party at the prestigious 5-star Londoner Hotel on 31st December 2025. This extraordinary event promises a night of unparalleled elegance, excitement, and glamour, set in one of London's most iconic locations. Spread across two luxurious floors, the celebration will accommodate 700 guests, offering a truly unforgettable experience to welcome the New Year.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PQNWVG",
+        "text_netq6j"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 24
+      }
+    },
+    "rich_text_4xeAgP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fnz4PT": {
+          "type": "heading",
+          "settings": {
+            "heading": "After Party Only Tickets",
+            "heading_size": "h2"
+          }
+        },
+        "text_ARfgt7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For those looking to join the exclusive New Year's Eve Masquerade Ball at the 5-star Londoner Hotel after dinner, we are thrilled to offer a limited number of guests access to our After Party. </p><p>Starting at 21:30 (without dinner), guests can enjoy The Green Room nightclub, The Ballroom post-dinner service, and The Gallery until 2:30am. Doors close strictly at 23:55</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fnz4PT",
+        "text_ARfgt7"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "featured_collection_kckVhc": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-years-eve-at-the-londoner-2025",
+        "products_to_show": 25,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "columns_mobile": "2",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "rich_text_hKLBem": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_DDymXT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Drinks Packages",
+            "heading_size": "h2"
+          }
+        },
+        "text_9Qm6X6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>xxxxxxxxxxxxxxxxxxxxxxxxxxx</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DDymXT",
+        "text_9Qm6X6"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 24
+      }
+    },
+    "featured_collection_c9F6xh": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "the-londoner-2025",
+        "products_to_show": 25,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "collection_product_cards",
+    "custom_rich_html_694Rtb",
+    "banner",
+    "rich_text_FFyTRR",
+    "rich_text_4xeAgP",
+    "featured_collection_kckVhc",
+    "product-grid",
+    "rich_text_hKLBem",
+    "featured_collection_c9F6xh"
+  ]
+}

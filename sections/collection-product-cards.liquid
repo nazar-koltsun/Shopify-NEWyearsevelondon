@@ -1,0 +1,389 @@
+{{ 'section-collection-product-cards.css' | asset_url | stylesheet_tag }}
+
+<div class="collection-product-cards">
+  <div
+    class="page-width section-collection-product-cards-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}
+    data-cascade
+    {% endif %}>
+    {%- unless section.settings.title == blank -%}
+      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
+        <h2 class="visually-hidden">
+          {{ section.settings.title }}
+        </h2>
+      </div>
+    {%- endunless -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <ul class="collection-product-cards__list" role="list">
+        {%- for block in section.blocks -%}
+          {%- liquid
+            assign book_url = block.settings.button_link
+            if book_url == blank and block.settings.ticket_product_1 != blank
+              assign book_url = block.settings.ticket_product_1.url
+            endif
+            if book_url == blank and block.settings.ticket_product_2 != blank
+              assign book_url = block.settings.ticket_product_2.url
+            endif
+            if book_url == blank and block.settings.ticket_product_3 != blank
+              assign book_url = block.settings.ticket_product_3.url
+            endif
+            if book_url == blank and block.settings.ticket_product_4 != blank
+              assign book_url = block.settings.ticket_product_4.url
+            endif
+
+            assign has_ticket_options = false
+            if block.settings.ticket_label_1 != blank or block.settings.ticket_product_1 != blank
+              assign has_ticket_options = true
+            endif
+            if block.settings.ticket_label_2 != blank or block.settings.ticket_product_2 != blank
+              assign has_ticket_options = true
+            endif
+            if block.settings.ticket_label_3 != blank or block.settings.ticket_product_3 != blank
+              assign has_ticket_options = true
+            endif
+            if block.settings.ticket_label_4 != blank or block.settings.ticket_product_4 != blank
+              assign has_ticket_options = true
+            endif
+          -%}
+
+          <li
+            class="collection-product-cards__item {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {{ block.shopify_attributes }}
+            {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: {{ forloop.index }};"
+            {% endif %}>
+            <article class="collection-product-cards__card content-container">
+              <div class="collection-product-cards__media{% if block.settings.image == blank %} collection-product-cards__placeholder{% endif %}">
+                {%- if block.settings.badge != blank -%}
+                  <span class="collection-product-cards__badge">{{ block.settings.badge | escape }}</span>
+                {%- endif -%}
+                {%- if block.settings.image != blank -%}
+                  {%- liquid
+                    assign columns_desktop = 4
+                    assign grid_space_desktop = columns_desktop | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
+                    assign grid_space_mobile = settings.spacing_grid_horizontal | divided_by: 2 | plus: 30 | append: 'px'
+                  -%}
+                  {% capture sizes %}
+                    (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - {{ grid_space_desktop }}) / {{ columns_desktop }}),
+                    (min-width: 750px) calc((100vw - {{ grid_space_desktop }}) / {{ columns_desktop }}),
+                    calc(100vw - {{ grid_space_mobile }})
+                  {% endcapture %}
+                  {%- liquid
+                    assign image_alt = block.settings.image.alt | default: block.settings.title | strip_html
+                  -%}
+                  {{
+                    block.settings.image | image_url: width: 1500 | image_tag: widths: '165, 360, 535, 750, 1000, 1500', sizes: sizes, loading: 'lazy', alt: image_alt
+                  }}
+                {%- else -%}
+                  {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                {%- endif -%}
+              </div>
+
+              <div class="collection-product-cards__body">
+                {%- if block.settings.title != blank -%}
+                  <h3 class="collection-product-cards__title inline-richtext">
+                    {{ block.settings.title }}
+                  </h3>
+                {%- endif -%}
+
+                {%- if block.settings.price != blank -%}
+                  <p class="collection-product-cards__price">{{ block.settings.price | escape }}</p>
+                {%- endif -%}
+
+                {%- if block.settings.subtitle != blank -%}
+                  <p class="collection-product-cards__subtitle">{{ block.settings.subtitle | escape }}</p>
+                {%- endif -%}
+
+                {%- if block.settings.button_label != blank -%}
+                  <div class="collection-product-cards__cta">
+                    <a
+                      class="collection-product-cards__button"
+                      {% if book_url == blank %}
+                      role="link"
+                      aria-disabled="true"
+                      {% else %}
+                      href="{{ book_url }}"
+                      {% endif %}>
+                      {{ block.settings.button_label | escape }}
+                    </a>
+                  </div>
+                {%- endif -%}
+
+                {%- if block.settings.features != blank -%}
+                  <div class="collection-product-cards__features rte">
+                    {%- if block.settings.features_heading != blank -%}
+                      <p class="collection-product-cards__features-heading">
+                        {{ block.settings.features_heading | escape }}
+                      </p>
+                    {%- endif -%}
+                    {{ block.settings.features }}
+                  </div>
+                {%- endif -%}
+
+                {%- if has_ticket_options -%}
+                  <div class="collection-product-cards__ticket-options">
+                    {%- if block.settings.ticket_options_heading != blank -%}
+                      <p class="collection-product-cards__ticket-heading">
+                        {{ block.settings.ticket_options_heading | escape }}
+                      </p>
+                    {%- endif -%}
+                    <ul class="collection-product-cards__ticket-list">
+                      {%- if block.settings.ticket_label_1 != blank or block.settings.ticket_product_1 != blank -%}
+                        <li>
+                          {%- if block.settings.ticket_product_1 != blank -%}
+                            <a href="{{ block.settings.ticket_product_1.url }}">
+                              {%- if block.settings.ticket_label_1 != blank -%}
+                                {{ block.settings.ticket_label_1 | escape }}
+                              {%- else -%}
+                                {{ block.settings.ticket_product_1.title | escape }}
+                              {%- endif -%}
+                            </a>
+                          {%- else -%}
+                            {{ block.settings.ticket_label_1 | escape }}
+                          {%- endif -%}
+                        </li>
+                      {%- endif -%}
+                      {%- if block.settings.ticket_label_2 != blank or block.settings.ticket_product_2 != blank -%}
+                        <li>
+                          {%- if block.settings.ticket_product_2 != blank -%}
+                            <a href="{{ block.settings.ticket_product_2.url }}">
+                              {%- if block.settings.ticket_label_2 != blank -%}
+                                {{ block.settings.ticket_label_2 | escape }}
+                              {%- else -%}
+                                {{ block.settings.ticket_product_2.title | escape }}
+                              {%- endif -%}
+                            </a>
+                          {%- else -%}
+                            {{ block.settings.ticket_label_2 | escape }}
+                          {%- endif -%}
+                        </li>
+                      {%- endif -%}
+                      {%- if block.settings.ticket_label_3 != blank or block.settings.ticket_product_3 != blank -%}
+                        <li>
+                          {%- if block.settings.ticket_product_3 != blank -%}
+                            <a href="{{ block.settings.ticket_product_3.url }}">
+                              {%- if block.settings.ticket_label_3 != blank -%}
+                                {{ block.settings.ticket_label_3 | escape }}
+                              {%- else -%}
+                                {{ block.settings.ticket_product_3.title | escape }}
+                              {%- endif -%}
+                            </a>
+                          {%- else -%}
+                            {{ block.settings.ticket_label_3 | escape }}
+                          {%- endif -%}
+                        </li>
+                      {%- endif -%}
+                      {%- if block.settings.ticket_label_4 != blank or block.settings.ticket_product_4 != blank -%}
+                        <li>
+                          {%- if block.settings.ticket_product_4 != blank -%}
+                            <a href="{{ block.settings.ticket_product_4.url }}">
+                              {%- if block.settings.ticket_label_4 != blank -%}
+                                {{ block.settings.ticket_label_4 | escape }}
+                              {%- else -%}
+                                {{ block.settings.ticket_product_4.title | escape }}
+                              {%- endif -%}
+                            </a>
+                          {%- else -%}
+                            {{ block.settings.ticket_label_4 | escape }}
+                          {%- endif -%}
+                        </li>
+                      {%- endif -%}
+                    </ul>
+                  </div>
+                {%- endif -%}
+
+              </div>
+            </article>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Collection product cards",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "Heading",
+        "default": "Ticket packages"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "card",
+        "name": "Product card",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "badge",
+            "label": "Badge",
+            "info": "Shown as a ribbon on the top-left of the image. Leave blank to hide."
+          },
+          {
+            "type": "inline_richtext",
+            "id": "title",
+            "label": "Title",
+            "default": "SILVER"
+          },
+          {
+            "type": "text",
+            "id": "price",
+            "label": "Price",
+            "default": "From £295"
+          },
+          {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle",
+            "default": "Early Bird ends 31 July",
+            "info": "e.g. Early Bird ends 31 July"
+          }, {
+            "type": "text",
+            "id": "features_heading",
+            "label": "Features heading",
+            "default": "What's included"
+          }, {
+            "type": "richtext",
+            "id": "features",
+            "label": "Features",
+            "default": "<ul><li>Welcome drink</li><li>Three-course dinner</li><li>Live entertainment</li></ul>",
+            "info": "Use a bullet list. Checkmarks are added automatically."
+          }, {
+            "type": "header",
+            "content": "Ticket options"
+          }, {
+            "type": "text",
+            "id": "ticket_options_heading",
+            "label": "Ticket options heading",
+            "default": "Ticket options:"
+          }, {
+            "type": "paragraph",
+            "content": "Add up to 4 ticket options. Choose a product for each option to create a link."
+          }, {
+            "type": "text",
+            "id": "ticket_label_1",
+            "label": "Option 1 label",
+            "default": "Couple (2)"
+          }, {
+            "type": "product",
+            "id": "ticket_product_1",
+            "label": "Option 1 product"
+          }, {
+            "type": "text",
+            "id": "ticket_label_2",
+            "label": "Option 2 label",
+            "default": "Table of 12"
+          }, {
+            "type": "product",
+            "id": "ticket_product_2",
+            "label": "Option 2 product"
+          }, {
+            "type": "text",
+            "id": "ticket_label_3",
+            "label": "Option 3 label"
+          }, {
+            "type": "product",
+            "id": "ticket_product_3",
+            "label": "Option 3 product"
+          }, {
+            "type": "text",
+            "id": "ticket_label_4",
+            "label": "Option 4 label"
+          }, {
+            "type": "product",
+            "id": "ticket_product_4",
+            "label": "Option 4 product"
+          }, {
+            "type": "header",
+            "content": "Call to action"
+          }, {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button label",
+            "default": "BOOK NOW"
+          }, {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link",
+            "info": "Leave blank to use the first ticket option product."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Collection product cards",
+        "blocks": [
+          {
+            "type": "card",
+            "settings": {
+              "title": "New Year's Eve London 2026 | Silver Dinner & Party Ticket at The Londoner",
+              "price": "£395.00",
+              "subtitle": "Early Bird price — ends 31 July. £425 from 1 August.",
+              "features_heading": "What's included",
+              "features": "<ul><li>Two glasses of Moët Chandon and hot cold canapés on arrival (from 7:00pm)</li><li>Three-course gala dinner in the Ballroom (served from 8:15pm)</li><li>Free-flowing house red white wine during dinner (until dessert is served)</li><li>Unlimited still sparkling water throughout the evening</li><li>Live band (The Bando), DJ sets and live performances</li><li>Big Ben midnight countdown on 4x6m LED screens</li><li>Midnight snacks</li><li>Party until 2:30am</li></ul>",
+              "ticket_options_heading": "Ticket options:",
+              "ticket_label_1": "Silver Dinner & Party Ticket for 2 Guests",
+              "ticket_label_2": "Silver Dinner & Party Table for 12 Guests",
+              "button_label": "BOOK NOW"
+            }
+          }, {
+            "type": "card",
+            "settings": {
+              "title": "New Year's Eve London 2026 | Gold Dinner & Party Tickets at The Londoner",
+              "badge": "Most Popular",
+              "price": "£545.00",
+              "subtitle": "Early Bird price — ends 31 July. £575 from 1 August.",
+              "features_heading": "What's included",
+              "features": "<ul><li>Premium Ballroom seating, closer to the dancefloor</li><li>Full table waiter drinks service during dinner</li><li>Complimentary drinks during dinner: champagne, beer, and premium red white wine (until dessert is served)</li></ul>",
+              "ticket_options_heading": "Ticket options:",
+              "ticket_label_1": "Gold Dinner & Party Tickets for 2 Guests",
+              "ticket_label_2": "Gold Dinner & Party Table for 12 Guests",
+              "button_label": "BOOK NOW"
+            }
+          }, {
+            "type": "card",
+            "settings": {
+              "title": "New Year's Eve London 2026 | Platinum Dinner & Party Tickets at The Londoner",
+              "badge": "Best Seats",
+              "price": "£595.00",
+              "subtitle": "Early Bird price — ends 31 July. £625 from 1 August.",
+              "features_heading": "What's included",
+              "features": "<ul><li>The finest seating positions in the Ballroom — closest to the dancefloor and the stage</li></ul>",
+              "ticket_options_heading": "Ticket options:",
+              "ticket_label_1": "Platinum Dinner & Party Tickets for 2 Guests",
+              "ticket_label_2": "Platinum Dinner & Party Table for 12 Guests",
+              "button_label": "BOOK NOW"
+            }
+          }, {
+            "type": "card",
+            "settings": {
+              "title": "After Party Only Ticket",
+              "price": "145.00",
+              "subtitle": "",
+              "features_heading": "What's included",
+              "features": "<ul><li>Entry from 9:30pm (last entry strictly 11:55pm)</li><li>A glass of sparkling wine on arrival</li><li>Access to the Ballroom and The Gallery</li><li>Live DJs and the Big Ben midnight countdown on 4x6m LED screens</li><li>Midnight snacks</li><li>Unlimited still sparkling water</li><li>Party until 2:30am</li></ul>",
+              "button_label": "BOOK NOW"
+            }
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
