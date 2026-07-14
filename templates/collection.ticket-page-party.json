@@ -113,16 +113,16 @@
             "features_heading": "What's included",
             "features": "<ul><li>Entry from 9:30pm (last entry strictly 11:55pm)</li><li>A glass of sparkling wine on arrival</li><li>Access to the Ballroom and The Gallery</li><li>Live DJs and the Big Ben midnight countdown on 4x6m LED screens</li><li>Midnight snacks</li><li>Unlimited still sparkling water</li><li>Party until 2:30am</li></ul>",
             "ticket_options_heading": "Ticket options:",
-            "ticket_label_1": "Couple (2)",
+            "ticket_label_1": "",
             "ticket_product_1": "",
-            "ticket_label_2": "Table of 12",
+            "ticket_label_2": "",
             "ticket_product_2": "",
             "ticket_label_3": "",
             "ticket_product_3": "",
             "ticket_label_4": "",
             "ticket_product_4": "",
             "button_label": "BOOK NOW",
-            "button_product": ""
+            "button_product": "afterparty-ticket"
           }
         }
       },
