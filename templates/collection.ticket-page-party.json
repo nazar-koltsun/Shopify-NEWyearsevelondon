@@ -37,6 +37,7 @@
         "card_frCc9h": {
           "type": "card",
           "settings": {
+            "image": "shopify://shop_images/DALL_E_2024-12-09_15.15.12_-_A_luxurious_white_masquerade_mask_with_intricate_gold_and_silver_accents_designed_in_the_exact_style_and_angle_of_the_uploaded_gold_mask_image._The_m.webp",
             "badge": "",
             "title": "New Year's Eve London 2026 | Silver Dinner & Party Ticket at The Londoner",
             "price": "£395.00",
@@ -53,7 +54,7 @@
             "ticket_label_4": "",
             "ticket_product_4": "",
             "button_label": "BOOK NOW",
-            "button_link": ""
+            "button_link": "/products/new-years-eve-at-the-londoner-2025-silver-seating-dinner-and-party-ticket"
           }
         },
         "card_CAGYz7": {
