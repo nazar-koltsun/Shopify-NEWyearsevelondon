@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "collection_product_cards": {
@@ -22,8 +31,8 @@
         "card_gold": {
           "type": "card",
           "settings": {
-            "title": "GOLD",
             "badge": "Most Popular",
+            "title": "GOLD",
             "price": "From £395",
             "subtitle": "Early Bird ends 31 July",
             "features_heading": "What's included",
@@ -39,8 +48,8 @@
         "card_platinum": {
           "type": "card",
           "settings": {
-            "title": "PLATINUM",
             "badge": "Best Seats",
+            "title": "PLATINUM",
             "price": "From £495",
             "subtitle": "Early Bird ends 31 July",
             "features_heading": "What's included",
@@ -77,16 +86,7 @@
         "card_party"
       ],
       "settings": {
-        "title": "Ticket packages",
-        "heading_size": "h1",
-        "card_heading_size": "h2",
-        "columns_desktop": 4,
-        "columns_mobile": "1",
-        "image_ratio": "square",
-        "background_style": "primary",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "title": "Ticket packages"
       }
     },
     "custom_rich_html_694Rtb": {
