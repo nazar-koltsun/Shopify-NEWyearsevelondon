@@ -15,7 +15,7 @@
         "text_netq6j": {
           "type": "text",
           "settings": {
-            "text": "<p>The 2025 event is sold out. <a href=\"https://www.newyearsevelondon.co.uk/\" title=\"New Year's Eve London 2026\">New Year's Eve London 2026 </a>tickets are now on sale.</p>"
+            "text": "<p><a href=\"https://www.newyearsevelondon.co.uk/\" title=\"New Year's Eve London 2026\">New Year's Eve London 2026 </a>tickets are now on sale.</p>"
           }
         }
       },
