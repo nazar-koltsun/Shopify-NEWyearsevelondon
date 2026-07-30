@@ -447,7 +447,7 @@
           "type": "column",
           "settings": {
             "title": "<strong>Location</strong>",
-            "text": "<p>The Londoner Hotel, Leicester Square, London, WC2H 7DX</p><p>-</p><ul><li><strong>Doors Open:</strong> 19:00 </li><li><strong>Carriages</strong> 02:30</li></ul>",
+            "text": "<p>The Londoner Hotel, Leicester Square, London, WC2H 7DX</p><ul><li><strong>Doors Open:</strong> 19:00 </li><li><strong>Carriages</strong> 02:30</li></ul>",
             "link_label": "",
             "link": ""
           }
@@ -465,7 +465,7 @@
           "type": "column",
           "settings": {
             "title": "<strong>Capacity & Accomodation</strong>",
-            "text": "<p><strong>700 guests</strong> across two stunning floors.</p><p>-</p><ul><li><strong>Accommodation:</strong> Hotel Rooms available on request</li></ul>",
+            "text": "<p><strong>700 guests</strong> across two stunning floors.</p><ul><li><strong>Accommodation:</strong> Hotel Rooms available on request</li></ul>",
             "link_label": "",
             "link": ""
           }
