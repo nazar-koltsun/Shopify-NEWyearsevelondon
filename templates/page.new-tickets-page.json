@@ -94,6 +94,109 @@
         "padding_bottom": 32
       }
     },
+    "collection_product_cards_yEUmew": {
+      "type": "collection-product-cards",
+      "blocks": {
+        "card_QJy7wz": {
+          "type": "card",
+          "settings": {
+            "badge": "",
+            "title": "New Year's Eve London 2026 | Silver Dinner & Party Ticket at The Londoner",
+            "price": "£395.00",
+            "subtitle": "Early Bird price — ends 31 July. £425 from 1 August.",
+            "features_heading": "What's included:",
+            "features": "<ul><li>Two glasses of Moët Chandon and hot cold canapés on arrival (from 7:00pm)</li><li>Three-course gala dinner in the Ballroom (served from 8:15pm)</li><li>Free-flowing house red white wine during dinner (until dessert is served)</li><li>Unlimited still sparkling water throughout the evening</li><li>Live band (The Bando), DJ sets and live performances</li><li>Big Ben midnight countdown on 4x6m LED screens</li><li>Midnight snacks</li><li>Party until 2:30am</li></ul>",
+            "ticket_options_heading": "Ticket options:",
+            "ticket_label_1": "Silver Dinner & Party Ticket for 2 Guests",
+            "ticket_product_1": "",
+            "ticket_label_2": "Silver Dinner & Party Table for 12 Guests",
+            "ticket_product_2": "",
+            "ticket_label_3": "",
+            "ticket_product_3": "",
+            "ticket_label_4": "",
+            "ticket_product_4": "",
+            "button_label": "BOOK NOW",
+            "button_product": ""
+          }
+        },
+        "card_j3dNKd": {
+          "type": "card",
+          "settings": {
+            "badge": "Most Popular",
+            "title": "New Year's Eve London 2026 | Gold Dinner & Party Tickets at The Londoner",
+            "price": "£545.00",
+            "subtitle": "Early Bird price — ends 31 July. £575 from 1 August.",
+            "features_heading": "What's included:",
+            "features": "<ul><li>Premium Ballroom seating, closer to the dancefloor</li><li>Full table waiter drinks service during dinner</li><li>Complimentary drinks during dinner: champagne, beer, and premium red white wine (until dessert is served)</li></ul>",
+            "ticket_options_heading": "Ticket options:",
+            "ticket_label_1": "Gold Dinner & Party Tickets for 2 Guests",
+            "ticket_product_1": "",
+            "ticket_label_2": "Gold Dinner & Party Table for 12 Guests",
+            "ticket_product_2": "",
+            "ticket_label_3": "",
+            "ticket_product_3": "",
+            "ticket_label_4": "",
+            "ticket_product_4": "",
+            "button_label": "BOOK NOW",
+            "button_product": ""
+          }
+        },
+        "card_HAWXpp": {
+          "type": "card",
+          "settings": {
+            "badge": "Best Seats",
+            "title": "New Year's Eve London 2026 | Platinum Dinner & Party Tickets at The Londoner",
+            "price": "£595.00",
+            "subtitle": "Early Bird price — ends 31 July. £625 from 1 August.",
+            "features_heading": "What's included:",
+            "features": "<ul><li>The finest seating positions in the Ballroom — closest to the dancefloor and the stage</li></ul>",
+            "ticket_options_heading": "Ticket options:",
+            "ticket_label_1": "Platinum Dinner & Party Tickets for 2 Guests",
+            "ticket_product_1": "",
+            "ticket_label_2": "Platinum Dinner & Party Table for 12 Guests",
+            "ticket_product_2": "",
+            "ticket_label_3": "",
+            "ticket_product_3": "",
+            "ticket_label_4": "",
+            "ticket_product_4": "",
+            "button_label": "BOOK NOW",
+            "button_product": ""
+          }
+        },
+        "card_J3Db9Y": {
+          "type": "card",
+          "settings": {
+            "badge": "",
+            "title": "After Party Only Ticket",
+            "price": "145.00",
+            "subtitle": "",
+            "features_heading": "What's included:",
+            "features": "<ul><li>Entry from 9:30pm (last entry strictly 11:55pm)</li><li>A glass of sparkling wine on arrival</li><li>Access to the Ballroom and The Gallery</li><li>Live DJs and the Big Ben midnight countdown on 4x6m LED screens</li><li>Midnight snacks</li><li>Unlimited still sparkling water</li><li>Party until 2:30am</li></ul>",
+            "ticket_options_heading": "Ticket options:",
+            "ticket_label_1": "Couple (2)",
+            "ticket_product_1": "",
+            "ticket_label_2": "Table of 12",
+            "ticket_product_2": "",
+            "ticket_label_3": "",
+            "ticket_product_3": "",
+            "ticket_label_4": "",
+            "ticket_product_4": "",
+            "button_label": "BOOK NOW",
+            "button_product": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_QJy7wz",
+        "card_j3dNKd",
+        "card_HAWXpp",
+        "card_J3Db9Y"
+      ],
+      "name": "Collection product cards",
+      "settings": {
+        "title": "Ticket packages"
+      }
+    },
     "ss_image_with_text_12_mKN8G8": {
       "type": "ss-image-with-text-12",
       "blocks": {
@@ -664,6 +767,7 @@
     "main",
     "image_banner_TDqxxk",
     "rich_text_96xQDW",
+    "collection_product_cards_yEUmew",
     "ss_image_with_text_12_mKN8G8",
     "image_with_text_7r3xGy",
     "rich_text_MDc7Gh",
