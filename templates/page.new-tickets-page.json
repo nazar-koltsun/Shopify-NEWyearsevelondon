@@ -188,13 +188,37 @@
             "button_label": "BOOK NOW",
             "button_product": "afterparty-ticket"
           }
+        },
+        "card_drqKfg": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/london-nye-young-adults-silver-ticket-mask.webp",
+            "badge": "",
+            "title": "New Year’s Eve London 2026 | Young Adult (Up to 13 years old)",
+            "price": "£345",
+            "subtitle": "",
+            "features_heading": "What's included:",
+            "features": "<ul><li>Four hot cold canapés on arrival</li><li>Three-course seasonal menu in the Ballroom</li><li>Free-flowing juices soft drinks during dinner</li><li>Midnight snacks</li><li>Unlimited still & sparkling water throughout the evening</li><li>Seated at the same table as their parents / guardians</li></ul>",
+            "ticket_options_heading": "Ticket options:",
+            "ticket_label_1": "",
+            "ticket_product_1": "",
+            "ticket_label_2": "",
+            "ticket_product_2": "",
+            "ticket_label_3": "",
+            "ticket_product_3": "",
+            "ticket_label_4": "",
+            "ticket_product_4": "",
+            "button_label": "BOOK NOW",
+            "button_product": "new-years-eve-at-the-londoner-2025-young-adult-silver-seating-dinner-and-party-ticket"
+          }
         }
       },
       "block_order": [
         "card_QJy7wz",
         "card_j3dNKd",
         "card_HAWXpp",
-        "card_J3Db9Y"
+        "card_J3Db9Y",
+        "card_drqKfg"
       ],
       "name": "Collection product cards",
       "settings": {
