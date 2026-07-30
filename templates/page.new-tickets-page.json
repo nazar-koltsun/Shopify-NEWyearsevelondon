@@ -117,7 +117,7 @@
             "ticket_label_4": "",
             "ticket_product_4": "",
             "button_label": "BOOK NOW",
-            "button_product": ""
+            "button_product": "new-years-eve-at-the-londoner-2025-silver-seating-dinner-and-party-ticket"
           }
         },
         "card_j3dNKd": {
@@ -169,6 +169,7 @@
         "card_J3Db9Y": {
           "type": "card",
           "settings": {
+            "image": "shopify://shop_images/DALL_E2024-07-1920.17.44-Abeautiful_ornateblackmasquerademaskadornedwithintricatepatternsandfeathers_setagainstanelegantbackgroundsuitableforaNewYear_sEv.png",
             "badge": "",
             "title": "After Party Only Ticket",
             "price": "145.00",
