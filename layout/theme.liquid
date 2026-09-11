@@ -368,45 +368,197 @@
 
     {% if page.handle == 'nye-faq' %}
       <script type="application/ld+json">
-        { 
-          "@context": "https://schema.org", 
-          "@type": "FAQPage", 
-          "mainEntity": [ 
-            { "@type": "Question", "name": "Where is the NYE Mayfair Masquerade 2026 taking place?", 
-              "acceptedAnswer": { "@type": "Answer", "text": "The Londoner Hotel, 50 Whitcomb Street, Leicester Square, London WC2H 7BA. Nearest tube: Leicester Square, 2 minutes walk." }}, 
-            { "@type": "Question", "name": "What are the event timings?", 
-              "acceptedAnswer": { "@type": "Answer", "text": "Doors 7pm, dinner 8:15pm, after-party entry 9:30pm, last entry 11:55pm (strict), midnight countdown 12am, last drinks 2am, event ends 2:30am." }}, 
-            { "@type": "Question", "name": "What is included in Silver Dinner and Party tickets?", 
-              "acceptedAnswer": { "@type": "Answer", "text": "Moet & Chandon champagne and canape reception, three-course dinner with free-flowing wine, live band, DJ, performances, midnight countdown, midnight snacks, party until 2:30am." }}, 
-            { "@type": "Question", "name": "What is included in Gold and Platinum tickets?", 
-              "acceptedAnswer": { "@type": "Answer", "text": "Everything in Silver plus premium seating, full table waiter service, and complimentary open bar (champagne, wines, beers, soft drinks) during dinner. Platinum has the best seats and full waiter service all evening." }}, 
-            { "@type": "Question", "name": "What is included in After Party Only tickets?", 
-              "acceptedAnswer": { "@type": "Answer", "text": "Entry from 9:30pm, Ballroom and Gallery access, live DJs, midnight countdown, midnight snacks, unlimited water, party until 2:30am. Does not include dinner or wine." }}, 
-            { "@type": "Question", "name": "What is the dress code?", 
-              "acceptedAnswer": { "@type": "Answer", "text": "Black tie or smart suit for men. Cocktail dress or evening gown for ladies. No sportswear or trainers. Masquerade masks are encouraged but not required — available on arrival from £15." }}, 
-            { "@type": "Question", "name": "Can I sit with friends who bought tickets separately?", 
-              "acceptedAnswer": { "@type": "Answer", "text": "Yes. Purchase the same ticket tier, then email your Order IDs to support@newyearsevelondon.co.uk and we will seat you together." }}, 
-            { "@type": "Question", "name": "Does the event sell out?", 
-              "acceptedAnswer": { "@type": "Answer", "text": "Yes, every year since 2019. The 2025 event sold out months before New Year's Eve. There are 700 places for 2026." }}, 
-            { 
-              "@type": "Question", 
-              "name": "Is accommodation available at The Londoner Hotel?", 
-              "acceptedAnswer": { 
-                "@type": "Answer", 
-                "text": "Yes. Hotel rooms at The Londoner are available to book separately and are not included in event ticket prices. Book rooms, including Deluxe King rooms, and view multi-night rates at book.passkey.com/go/newyears2026." 
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Where is the event taking place?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Londoner Hotel, 50 Whitcomb Street, Leicester Square, London WC2H 7BA. A five-star boutique hotel in the heart of the West End."
               }
-            }, 
-            { "@type": "Question", "name": "What is the last entry time?", 
-              "acceptedAnswer": { "@type": "Answer", "text": "11:55pm. Strictly enforced. No guests admitted after midnight." }}, 
-            { "@type": "Question", "name": "What entertainment is included?", 
-              "acceptedAnswer": { "@type": "Answer", "text": "Live band (The Bando) from 7:45pm, DJ Rugrat, performances throughout, and a live Big Ben midnight countdown on 4x6 metre LED screens." }}, 
-            { "@type": "Question", "name": "What is the refund policy?", 
-              "acceptedAnswer": { "@type": "Answer", "text": "All sales are final and non-refundable. Tickets may be transferred by emailing support@newyearsevelondon.co.uk with your Order ID and the new guest's details." }}, 
-            { "@type": "Question", "name": "How do I contact the team?", 
-              "acceptedAnswer": { "@type": "Answer", "text": "Email support@newyearsevelondon.co.uk or call +44 7956 900 373. Replies within 24 hours." }} 
-          ] 
-        } 
-      </script> 
+            },
+            {
+              "@type": "Question",
+              "name": "How do I get there?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nearest tube: Leicester Square (Northern and Piccadilly lines) — 2 minutes' walk. We strongly recommend public transport. Parking in the area on New Year's Eve is extremely limited."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is there parking nearby?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Very limited. Book a taxi home before you arrive — the event ends at 2:30am and transport fills up fast on New Year's Eve."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the event timings?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "7:00pm — Doors open (dinner guests). 7:45pm — Ballroom opens, live band begins. 8:15pm — Three-course dinner served. Please be seated by 8:00pm. 9:30pm — After-party guests arrive, The Gallery opens. 11:55pm — Last entry (strictly enforced). 12:00am — Big Ben midnight countdown on LED screens. 2:00am — Last drinks. 2:30am — Event closes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What time should I arrive?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dinner guests: by 7:15pm to make the most of the champagne reception. After-party guests: from 9:30pm."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the last entry time?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Strictly 11:55pm. No exceptions, no late arrivals after midnight."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does a Silver Dinner & Party ticket include?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Moët & Chandon champagne and canapé reception, three-course dinner with free-flowing wine, live band, DJ, performances, midnight countdown, midnight snacks, and party until 2:30am."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What do Gold & Platinum tickets include?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Everything in Silver plus: premium Ballroom seating closer to the dancefloor, full table waiter service, and complimentary open bar during dinner (champagne, beer, and premium red & white wine). Platinum has the best seats in the Ballroom."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does an After Party Only ticket include?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Entry from 9:30pm, access to the Ballroom and The Gallery, live DJs, midnight countdown, midnight snacks, unlimited water, party until 2:30am. Does not include dinner, wine, or the champagne reception."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between Silver, Gold, and Platinum?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "All three include champagne reception, three-course dinner, entertainment, midnight countdown, snacks, and party until 2:30am. Gold adds premium seating, waiter service, and open bar during dinner. Platinum has the best seats in the room."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I buy tickets on the door?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Advance booking only. The event sells out every year — book at newyearsevelondon.co.uk."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does this event sell out?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, every year since 2019. The 2025 event sold out months before New Year's Eve. There are 700 places for 2026 — book early."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I sit with friends who bought tickets separately?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. As long as everyone has bought the same ticket tier (Silver, Gold, or Platinum), email your Order IDs to support@newyearsevelondon.co.uk and we'll seat you together."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I book for a large group?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Purchase tickets individually, then email all Order IDs to support@newyearsevelondon.co.uk to request a shared table. Tables seat up to 12 guests."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is this suitable for a birthday or special occasion?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — milestone birthdays and celebrations are among the most common reasons people book. Email us if you have a special request."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the dress code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Men: Black tie or smart suit. Ladies: Cocktail dress or evening gown. No sportswear or trainers. Dress code is upheld at the door."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need to wear a mask?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Encouraged, not required. If you want one, masks are available to purchase on arrival from £15 to £50."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What food is served?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dinner guests receive a three-course gala dinner by The Londoner Hotel's kitchen, plus a champagne and canapé reception at 7pm. Midnight snacks are included for all guests."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can you accommodate dietary requirements?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Email support@newyearsevelondon.co.uk after booking with your requirements and Order ID."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What entertainment is there?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Live band (The Bando) from 7:45pm, DJ sets by DJ Rugrat, and performances throughout the evening. Big Ben midnight countdown streamed live on 4×6 metre LED screens."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is accommodation available at The Londoner Hotel?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Hotel rooms at The Londoner are available to book separately and are not included in event ticket prices. Book rooms, including Deluxe King rooms, and view multi-night rates at https://book.passkey.com/event/51322841/owner/50490733/home. See our Where to Stay page for more on the guest rate and getting home after the event."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the refund policy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "All ticket sales are final and non-refundable. Tickets may be transferred — email support@newyearsevelondon.co.uk with your Order ID and the new guest's name. See full Terms & Conditions."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I contact you?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Email: support@newyearsevelondon.co.uk. Phone: +44 7956 900 373. We reply within 24 hours."
+              }
+            }
+          ]
+        }
+      </script>
     {% endif %}
   <meta name="google-site-verification" content="fsQCD-1GbNkIVXFIqDpljO5fl-WZKajUkL4eSu3lNk0" />
   </head>
