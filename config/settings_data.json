@@ -192,6 +192,11 @@
         "type": "shopify://apps/terms-checkbox/blocks/app-embed/17661ca5-aeea-41b9-8091-d8f7233e8b22",
         "disabled": true,
         "settings": {}
+      },
+      "14425525815014821163": {
+        "type": "shopify://apps/openai-ads-pixel/blocks/openai-pixel-embed/019f2432-9be0-78bd-b562-a6165a9c7ed3",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
