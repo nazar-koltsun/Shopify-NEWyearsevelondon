@@ -197,6 +197,11 @@
         "type": "shopify://apps/openai-ads-pixel/blocks/openai-pixel-embed/019f2432-9be0-78bd-b562-a6165a9c7ed3",
         "disabled": false,
         "settings": {}
+      },
+      "11410266521467960356": {
+        "type": "shopify://apps/seon-fraud-prevention-v2/blocks/script/019d0532-bc95-7d80-97b8-0995e050d6a7",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
