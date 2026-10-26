@@ -72,6 +72,12 @@
     "rich_text_cKczxB": {
       "type": "rich-text",
       "blocks": {
+        "text_baRPLa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Looking for New Year’s Eve 2026? <a href=\"/pages/new-year-s-eve-london-2026-masquerade-ball\">Tickets here →</a></p>"
+          }
+        },
         "heading_gwYAg3": {
           "type": "heading",
           "settings": {
@@ -98,6 +104,7 @@
         }
       },
       "block_order": [
+        "text_baRPLa",
         "heading_gwYAg3",
         "text_pmHbBM",
         "button_N7fRcU"
