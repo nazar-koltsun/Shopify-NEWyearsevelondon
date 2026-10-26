@@ -61,29 +61,6 @@
         "show_text_below": false
       }
     },
-    "rich_text_UjU3HF": {
-      "type": "rich-text",
-      "blocks": {
-        "text_Mr7C6p": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Looking for New Year’s Eve 2026? <a href=\"/pages/new-year-s-eve-london-2026-masquerade-ball\">Tickets here →</a></p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_Mr7C6p"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -95,10 +72,16 @@
     "rich_text_cKczxB": {
       "type": "rich-text",
       "blocks": {
+        "text_Q9riCz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Looking for New Year’s Eve 2026? <a href=\"/pages/new-year-s-eve-london-2026-masquerade-ball\">Tickets here →</a></p>"
+          }
+        },
         "heading_gwYAg3": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Celebrate New Year’s Eve 2026 at The Londoner Hotel                       </strong>",
+            "heading": "<strong>Celebrate New Year’s Eve 2026 at The Londoner Hotel &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong>",
             "heading_size": "h2"
           }
         },
@@ -121,6 +104,7 @@
         }
       },
       "block_order": [
+        "text_Q9riCz",
         "heading_gwYAg3",
         "text_pmHbBM",
         "button_N7fRcU"
@@ -367,7 +351,6 @@
   },
   "order": [
     "image_banner_RQb9nx",
-    "rich_text_UjU3HF",
     "main",
     "rich_text_cKczxB",
     "multicolumn_zGtwfA",
