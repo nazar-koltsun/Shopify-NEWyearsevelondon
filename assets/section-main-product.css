@@ -1481,3 +1481,26 @@ a.product__text {
   margin: 0;
   margin-bottom: 32px;
 }
+
+.was-price {
+  margin: 0 0 2.5rem;
+  font-size: 16px;
+  color: #c27c2a;
+
+  @media screen and (max-width: 749px) {
+    font-size: 14px;
+  }
+}
+
+.was-price s {
+  margin-right: 0.5rem;
+}
+
+.was-price__note {
+  letter-spacing: 0.05em;
+  font-size: 16px;
+
+  @media screen and (max-width: 749px) {
+    font-size: 14px;
+  }
+}
