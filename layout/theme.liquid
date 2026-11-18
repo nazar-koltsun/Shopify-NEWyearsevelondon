@@ -641,6 +641,105 @@
         }
       </script>
     {% endif %}
+
+    {% if page.handle == 'menu' %}
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Menu",
+          "name": "New Year's Eve Dinner Menu at The Londoner",
+          "description": "New Year's Eve black-tie dinner menu featuring champagne reception canapés, starters, mains, desserts and late-night snacks. Vegetarian and vegan options are available.",
+          "hasMenuSection": [
+            {
+              "@type": "MenuSection",
+              "name": "Champagne Reception Canapés",
+              "hasMenuItem": [
+                {
+                  "@type": "MenuItem",
+                  "name": "Black truffle arancini with Italian hard cheese crème"
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "Shrimp and avocado ceviche with ají amarillo"
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "Burrata with Seville orange, coriander seeds and mānuka honey",
+                  "suitableForDiet": "https://schema.org/VegetarianDiet"
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "Rib-eye beef with yuzu kosho, smoked sea salt and black pepper"
+                }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Starters",
+              "hasMenuItem": [
+                {
+                  "@type": "MenuItem",
+                  "name": "Lobster and mascarpone ravioli with scotch bonnet labneh sauce"
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "Grilled asparagus with maltaise sauce and quail egg",
+                  "suitableForDiet": "https://schema.org/VegetarianDiet"
+                }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Mains",
+              "hasMenuItem": [
+                {
+                  "@type": "MenuItem",
+                  "name": "Beef wellington with mushroom duxelles, crêpe, pastry, carrot and red wine jus"
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "Portobello mushroom, black cabbage and goat's cheese wellington with shallot and garlic sauce",
+                  "suitableForDiet": "https://schema.org/VegetarianDiet"
+                }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Desserts",
+              "hasMenuItem": [
+                {
+                  "@type": "MenuItem",
+                  "name": "Passionfruit brûlée with coconut sorbet and umeshu jelly"
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "Chocolate raspberry bar: chocolate brownie with raspberry bubbles",
+                  "suitableForDiet": [
+                    "https://schema.org/VegetarianDiet",
+                    "https://schema.org/VeganDiet"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Late-Night Snacks",
+              "hasMenuItem": [
+                {
+                  "@type": "MenuItem",
+                  "name": "Bao bun: Japanese fried buttermilk chicken with garlic and chilli sauce"
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "Bao bun: crispy fried Portobello mushroom with green chilli mayonnaise",
+                  "suitableForDiet": "https://schema.org/VegetarianDiet"
+                }
+              ]
+            }
+          ]
+        }
+      </script>
+    {% endif %}
   <meta name="google-site-verification" content="fsQCD-1GbNkIVXFIqDpljO5fl-WZKajUkL4eSu3lNk0" />
   </head>
 
