@@ -3612,10 +3612,8 @@ details-disclosure > details {
 .multicolumn-card__info .link.animate-arrow {
   margin-top: auto;
 }
-.product-form button[type="submit"],
-  background-color: #C37C2A !important;
-  color: #ffffff !important;
-  font-weight: bolder !important;
-  border: none !important;
-  outline: none !important;
+
+.content-for-layout {
+  position: relative;
+  z-index: 100;
 }
