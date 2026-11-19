@@ -1,0 +1,1077 @@
+<!-- ===== NYE TABLE PLAN POP-UP — paste into the Shopify ticket product page (Custom Liquid block or product template) ===== -->
+<style>
+  .lle-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #0E0E12;
+    color: #E6C77A;
+    border: 1px solid #C9A24B;
+    padding: 14px 26px;
+    font: 600 14px / 1 'Montserrat'
+    , Arial
+    , sans-serif;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 0.2s
+  }
+  .lle-btn:hover {
+    background: #C9A24B;
+    color: #0E0E12
+  }
+  .lle-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(5, 5, 8, .88);
+    padding: 20px
+  }
+  .lle-modal.open {
+    display: flex
+  }
+  .lle-box {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    max-height: 92vh;
+    overflow: auto;
+    background: #08080B;
+    border: 1px solid rgba(201, 162, 75, .4);
+    border-radius: 6px
+  }
+  .lle-box svg {
+    display: block;
+    width: 100%;
+    height: auto
+  }
+  .lle-close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    background: none;
+    border: 0;
+    color: #F4F1EA;
+    font-size: 34px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 2
+  }
+  .lle-tip {
+    position: fixed;
+    pointer-events: none;
+    background: #F4F1EA;
+    color: #0E0E12;
+    font: 600 13px 'Montserrat'
+    , Arial
+    , sans-serif;
+    padding: 6px 10px;
+    border-radius: 3px;
+    display: none;
+    z-index: 100000
+  }
+  .lle-t {
+    cursor: default;
+    transition: opacity 0.15s
+  }
+  .lle-box svg:hover .lle-t {
+    opacity: .45
+  }
+  .lle-box svg .lle-t:hover {
+    opacity: 1
+  }
+  .lle-note {
+    color: #A6A6B0;
+    font: 13px 'Montserrat'
+    , Arial
+    , sans-serif;
+    text-align: center;
+    padding: 0 16px 18px;
+    margin: 0
+  }
+</style>
+
+<button
+  type="button"
+  class="lle-btn"
+  onclick="document.getElementById('lleModal').classList.add('open')">
+  View the table plan
+</button>
+
+<div
+  class="lle-modal"
+  id="lleModal"
+  onclick="if(event.target===this)this.classList.remove('open')">
+  <div
+    class="lle-box"
+    role="dialog"
+    aria-label="Ballroom table plan">
+    <button
+      class="lle-close"
+      aria-label="Close"
+      onclick="document.getElementById('lleModal').classList.remove('open')">&times;</button>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1600 1080"
+      role="img"
+      aria-label="Ballroom table plan">
+      <defs>
+        <radialGradient
+          id="bg"
+          cx="50%"
+          cy="40%"
+          r="75%"><stop offset="0" stop-color="#16161C" /><stop offset="1" stop-color="#08080B" /></radialGradient>
+        <pattern
+          id="df"
+          width="30"
+          height="30"
+          patternUnits="userSpaceOnUse"><rect
+            width="30"
+            height="30"
+            fill="#1E1E26" /><rect
+            width="15"
+            height="15"
+            fill="#262630" /><rect
+            x="15"
+            y="15"
+            width="15"
+            height="15"
+            fill="#262630" /></pattern>
+      </defs>
+      <rect
+        width="1600"
+        height="1080"
+        fill="url(#bg)" />
+      <text
+        x="800"
+        y="78"
+        text-anchor="middle"
+        fill="#C9A24B"
+        font-family="'Montserrat', Arial, sans-serif"
+        font-size="20"
+        letter-spacing="8">NYE MAYFAIR MASQUERADE · THE LONDONER</text>
+      <text
+        x="800"
+        y="140"
+        text-anchor="middle"
+        fill="#F4F1EA"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="54">Ballroom Table Plan</text>
+      <g transform="translate(-150,-80)">
+      <rect
+        x="205"
+        y="262"
+        width="1490"
+        height="650"
+        rx="28"
+        fill="none"
+        stroke="#C9A24B"
+        stroke-opacity=".55"
+        stroke-width="3" />
+      <rect
+        x="770"
+        y="282"
+        width="370"
+        height="88"
+        rx="10"
+        fill="#C9A24B"
+        fill-opacity=".14"
+        stroke="#C9A24B"
+        stroke-width="2.5" />
+      <text
+        x="955"
+        y="335"
+        text-anchor="middle"
+        fill="#E6C77A"
+        font-family="'Montserrat', Arial, sans-serif"
+        font-size="26"
+        font-weight="600"
+        letter-spacing="10">STAGE</text>
+      <rect
+        x="830"
+        y="425"
+        width="250"
+        height="265"
+        fill="url(#df)"
+        stroke="#5A5A66"
+        stroke-width="2" />
+      <text
+        x="955"
+        y="565"
+        text-anchor="middle"
+        fill="#B9B9C4"
+        font-family="'Montserrat', Arial, sans-serif"
+        font-size="20"
+        font-weight="600"
+        letter-spacing="5">DANCEFLOOR</text>
+      <rect
+        x="925"
+        y="903"
+        width="110"
+        height="14"
+        fill="#08080B" />
+      <text
+        x="980"
+        y="950"
+        text-anchor="middle"
+        fill="#8E9299"
+        font-family="'Montserrat', Arial, sans-serif"
+        font-size="18"
+        letter-spacing="4">ENTRANCE</text>
+      <g
+        class="lle-t lle-silver"
+        data-tier="Silver"
+        data-table="1">
+        <title>Table 1 · Silver</title>
+        <circle
+          cx="1593"
+          cy="437"
+          r="54"
+          fill="none"
+          stroke="#C3C6CC"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="1593"
+          cy="437"
+          r="44"
+          fill="#8E9299" />
+        <text
+          x="1593"
+          y="450"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">1</text>
+      </g>
+      <g
+        class="lle-t lle-silver"
+        data-tier="Silver"
+        data-table="2">
+        <title>Table 2 · Silver</title>
+        <circle
+          cx="1458"
+          cy="437"
+          r="54"
+          fill="none"
+          stroke="#C3C6CC"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="1458"
+          cy="437"
+          r="44"
+          fill="#8E9299" />
+        <text
+          x="1458"
+          y="450"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">2</text>
+      </g>
+      <g
+        class="lle-t lle-gold"
+        data-tier="Gold"
+        data-table="3">
+        <title>Table 3 · Gold</title>
+        <circle
+          cx="1340"
+          cy="497"
+          r="54"
+          fill="none"
+          stroke="#E6C77A"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="1340"
+          cy="497"
+          r="44"
+          fill="#C9A24B" />
+        <text
+          x="1340"
+          y="510"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">3</text>
+      </g>
+      <g
+        class="lle-t lle-platinum"
+        data-tier="Platinum"
+        data-table="4">
+        <title>Table 4 · Platinum</title>
+        <circle
+          cx="1215"
+          cy="440"
+          r="54"
+          fill="none"
+          stroke="#FFFFFF"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="1215"
+          cy="440"
+          r="44"
+          fill="#F4F1EA" />
+        <text
+          x="1215"
+          y="453"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">4</text>
+      </g>
+      <g
+        class="lle-t lle-platinum"
+        data-tier="Platinum"
+        data-table="5">
+        <title>Table 5 · Platinum</title>
+        <circle
+          cx="742"
+          cy="440"
+          r="54"
+          fill="none"
+          stroke="#FFFFFF"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="742"
+          cy="440"
+          r="44"
+          fill="#F4F1EA" />
+        <text
+          x="742"
+          y="453"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">5</text>
+      </g>
+      <g
+        class="lle-t lle-gold"
+        data-tier="Gold"
+        data-table="6">
+        <title>Table 6 · Gold</title>
+        <circle
+          cx="587"
+          cy="497"
+          r="54"
+          fill="none"
+          stroke="#E6C77A"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="587"
+          cy="497"
+          r="44"
+          fill="#C9A24B" />
+        <text
+          x="587"
+          y="510"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">6</text>
+      </g>
+      <g
+        class="lle-t lle-silver"
+        data-tier="Silver"
+        data-table="7">
+        <title>Table 7 · Silver</title>
+        <circle
+          cx="440"
+          cy="425"
+          r="54"
+          fill="none"
+          stroke="#C3C6CC"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="440"
+          cy="425"
+          r="44"
+          fill="#8E9299" />
+        <text
+          x="440"
+          y="438"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">7</text>
+      </g>
+      <g
+        class="lle-t lle-silver"
+        data-tier="Silver"
+        data-table="8">
+        <title>Table 8 · Silver</title>
+        <circle
+          cx="280"
+          cy="432"
+          r="54"
+          fill="none"
+          stroke="#C3C6CC"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="280"
+          cy="432"
+          r="44"
+          fill="#8E9299" />
+        <text
+          x="280"
+          y="445"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">8</text>
+      </g>
+      <g
+        class="lle-t lle-silver"
+        data-tier="Silver"
+        data-table="9">
+        <title>Table 9 · Silver</title>
+        <circle
+          cx="298"
+          cy="573"
+          r="54"
+          fill="none"
+          stroke="#C3C6CC"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="298"
+          cy="573"
+          r="44"
+          fill="#8E9299" />
+        <text
+          x="298"
+          y="586"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">9</text>
+      </g>
+      <g
+        class="lle-t lle-silver"
+        data-tier="Silver"
+        data-table="10">
+        <title>Table 10 · Silver</title>
+        <circle
+          cx="452"
+          cy="573"
+          r="54"
+          fill="none"
+          stroke="#C3C6CC"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="452"
+          cy="573"
+          r="44"
+          fill="#8E9299" />
+        <text
+          x="452"
+          y="586"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">10</text>
+      </g>
+      <g
+        class="lle-t lle-gold"
+        data-tier="Gold"
+        data-table="11">
+        <title>Table 11 · Gold</title>
+        <circle
+          cx="595"
+          cy="635"
+          r="54"
+          fill="none"
+          stroke="#E6C77A"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="595"
+          cy="635"
+          r="44"
+          fill="#C9A24B" />
+        <text
+          x="595"
+          y="648"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">11</text>
+      </g>
+      <g
+        class="lle-t lle-platinum"
+        data-tier="Platinum"
+        data-table="12">
+        <title>Table 12 · Platinum</title>
+        <circle
+          cx="748"
+          cy="575"
+          r="54"
+          fill="none"
+          stroke="#FFFFFF"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="748"
+          cy="575"
+          r="44"
+          fill="#F4F1EA" />
+        <text
+          x="748"
+          y="588"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">12</text>
+      </g>
+      <g
+        class="lle-t lle-platinum"
+        data-tier="Platinum"
+        data-table="13">
+        <title>Table 13 · Platinum</title>
+        <circle
+          cx="1218"
+          cy="572"
+          r="54"
+          fill="none"
+          stroke="#FFFFFF"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="1218"
+          cy="572"
+          r="44"
+          fill="#F4F1EA" />
+        <text
+          x="1218"
+          y="585"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">13</text>
+      </g>
+      <g
+        class="lle-t lle-gold"
+        data-tier="Gold"
+        data-table="14">
+        <title>Table 14 · Gold</title>
+        <circle
+          cx="1340"
+          cy="630"
+          r="54"
+          fill="none"
+          stroke="#E6C77A"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="1340"
+          cy="630"
+          r="44"
+          fill="#C9A24B" />
+        <text
+          x="1340"
+          y="643"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">14</text>
+      </g>
+      <g
+        class="lle-t lle-silver"
+        data-tier="Silver"
+        data-table="15">
+        <title>Table 15 · Silver</title>
+        <circle
+          cx="1452"
+          cy="570"
+          r="54"
+          fill="none"
+          stroke="#C3C6CC"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="1452"
+          cy="570"
+          r="44"
+          fill="#8E9299" />
+        <text
+          x="1452"
+          y="583"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">15</text>
+      </g>
+      <g
+        class="lle-t lle-silver"
+        data-tier="Silver"
+        data-table="16">
+        <title>Table 16 · Silver</title>
+        <circle
+          cx="1590"
+          cy="570"
+          r="54"
+          fill="none"
+          stroke="#C3C6CC"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="1590"
+          cy="570"
+          r="44"
+          fill="#8E9299" />
+        <text
+          x="1590"
+          y="583"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">16</text>
+      </g>
+      <g
+        class="lle-t lle-silver"
+        data-tier="Silver"
+        data-table="17">
+        <title>Table 17 · Silver</title>
+        <circle
+          cx="1578"
+          cy="700"
+          r="54"
+          fill="none"
+          stroke="#C3C6CC"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="1578"
+          cy="700"
+          r="44"
+          fill="#8E9299" />
+        <text
+          x="1578"
+          y="713"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">17</text>
+      </g>
+      <g
+        class="lle-t lle-silver"
+        data-tier="Silver"
+        data-table="18">
+        <title>Table 18 · Silver</title>
+        <circle
+          cx="1445"
+          cy="700"
+          r="54"
+          fill="none"
+          stroke="#C3C6CC"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="1445"
+          cy="700"
+          r="44"
+          fill="#8E9299" />
+        <text
+          x="1445"
+          y="713"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">18</text>
+      </g>
+      <g
+        class="lle-t lle-gold"
+        data-tier="Gold"
+        data-table="19">
+        <title>Table 19 · Gold</title>
+        <circle
+          cx="1335"
+          cy="760"
+          r="54"
+          fill="none"
+          stroke="#E6C77A"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="1335"
+          cy="760"
+          r="44"
+          fill="#C9A24B" />
+        <text
+          x="1335"
+          y="773"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">19</text>
+      </g>
+      <g
+        class="lle-t lle-platinum"
+        data-tier="Platinum"
+        data-table="20">
+        <title>Table 20 · Platinum</title>
+        <circle
+          cx="1215"
+          cy="705"
+          r="54"
+          fill="none"
+          stroke="#FFFFFF"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="1215"
+          cy="705"
+          r="44"
+          fill="#F4F1EA" />
+        <text
+          x="1215"
+          y="718"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">20</text>
+      </g>
+      <g
+        class="lle-t lle-platinum"
+        data-tier="Platinum"
+        data-table="21">
+        <title>Table 21 · Platinum</title>
+        <circle
+          cx="1112"
+          cy="773"
+          r="54"
+          fill="none"
+          stroke="#FFFFFF"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="1112"
+          cy="773"
+          r="44"
+          fill="#F4F1EA" />
+        <text
+          x="1112"
+          y="786"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">21</text>
+      </g>
+      <g
+        class="lle-t lle-platinum"
+        data-tier="Platinum"
+        data-table="22">
+        <title>Table 22 · Platinum</title>
+        <circle
+          cx="977"
+          cy="777"
+          r="54"
+          fill="none"
+          stroke="#FFFFFF"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="977"
+          cy="777"
+          r="44"
+          fill="#F4F1EA" />
+        <text
+          x="977"
+          y="790"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">22</text>
+      </g>
+      <g
+        class="lle-t lle-platinum"
+        data-tier="Platinum"
+        data-table="23">
+        <title>Table 23 · Platinum</title>
+        <circle
+          cx="848"
+          cy="777"
+          r="54"
+          fill="none"
+          stroke="#FFFFFF"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="848"
+          cy="777"
+          r="44"
+          fill="#F4F1EA" />
+        <text
+          x="848"
+          y="790"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">23</text>
+      </g>
+      <g
+        class="lle-t lle-platinum"
+        data-tier="Platinum"
+        data-table="24">
+        <title>Table 24 · Platinum</title>
+        <circle
+          cx="750"
+          cy="700"
+          r="54"
+          fill="none"
+          stroke="#FFFFFF"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="750"
+          cy="700"
+          r="44"
+          fill="#F4F1EA" />
+        <text
+          x="750"
+          y="713"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">24</text>
+      </g>
+      <g
+        class="lle-t lle-gold"
+        data-tier="Gold"
+        data-table="25">
+        <title>Table 25 · Gold</title>
+        <circle
+          cx="602"
+          cy="765"
+          r="54"
+          fill="none"
+          stroke="#E6C77A"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="602"
+          cy="765"
+          r="44"
+          fill="#C9A24B" />
+        <text
+          x="602"
+          y="778"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">25</text>
+      </g>
+      <g
+        class="lle-t lle-silver"
+        data-tier="Silver"
+        data-table="26">
+        <title>Table 26 · Silver</title>
+        <circle
+          cx="458"
+          cy="705"
+          r="54"
+          fill="none"
+          stroke="#C3C6CC"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="458"
+          cy="705"
+          r="44"
+          fill="#8E9299" />
+        <text
+          x="458"
+          y="718"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">26</text>
+      </g>
+      <g
+        class="lle-t lle-silver"
+        data-tier="Silver"
+        data-table="27">
+        <title>Table 27 · Silver</title>
+        <circle
+          cx="308"
+          cy="710"
+          r="54"
+          fill="none"
+          stroke="#C3C6CC"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="308"
+          cy="710"
+          r="44"
+          fill="#8E9299" />
+        <text
+          x="308"
+          y="723"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">27</text>
+      </g>
+      <g
+        class="lle-t lle-silver"
+        data-tier="Silver"
+        data-table="28">
+        <title>Table 28 · Silver</title>
+        <circle
+          cx="325"
+          cy="840"
+          r="54"
+          fill="none"
+          stroke="#C3C6CC"
+          stroke-opacity=".45"
+          stroke-width="2"
+          stroke-dasharray="3 7" />
+        <circle
+          cx="325"
+          cy="840"
+          r="44"
+          fill="#8E9299" />
+        <text
+          x="325"
+          y="853"
+          text-anchor="middle"
+          fill="#1B1B1F"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="700">28</text>
+      </g>
+    </g>
+    <circle
+      cx="180"
+      cy="975"
+      r="22"
+      fill="#F4F1EA" />
+    <text
+      x="220"
+      y="971"
+      fill="#F4F1EA"
+      font-family="Georgia, 'Times New Roman', serif"
+      font-size="32">Platinum</text>
+    <text
+      x="220"
+      y="1003"
+      fill="#A6A6B0"
+      font-family="'Montserrat', Arial, sans-serif"
+      font-size="18">Front row, by the stage &amp; dancefloor</text>
+    <circle
+      cx="680"
+      cy="975"
+      r="22"
+      fill="#C9A24B" />
+    <text
+      x="720"
+      y="971"
+      fill="#F4F1EA"
+      font-family="Georgia, 'Times New Roman', serif"
+      font-size="32">Gold</text>
+    <text
+      x="720"
+      y="1003"
+      fill="#A6A6B0"
+      font-family="'Montserrat', Arial, sans-serif"
+      font-size="18">Second row, great views of the stage</text>
+    <circle
+      cx="1180"
+      cy="975"
+      r="22"
+      fill="#8E9299" />
+    <text
+      x="1220"
+      y="971"
+      fill="#F4F1EA"
+      font-family="Georgia, 'Times New Roman', serif"
+      font-size="32">Silver</text>
+    <text
+      x="1220"
+      y="1003"
+      fill="#A6A6B0"
+      font-family="'Montserrat', Arial, sans-serif"
+      font-size="18">Around the room, relaxed &amp; social</text>
+  </svg>
+
+  <p class="lle-note">Table numbers are allocated by our team based on availability.</p>
+</div></div><div class="lle-tip" id="lleTip"></div>
+
+<script>
+  (function(){
+  var tip=document.getElementById('lleTip');
+  document.querySelectorAll('#lleModal .lle-t').forEach(function(g){
+    g.addEventListener('mousemove',function(e){tip.textContent='Table '+g.dataset.table+' · '+g.dataset.tier;
+      tip.style.display='block';tip.style.left=(e.clientX+14)+'px';tip.style.top=(e.clientY+14)+'px';});
+    g.addEventListener('mouseleave',function(){tip.style.display='none';});
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')document.getElementById('lleModal').classList.remove('open');});
+  })();
+</script>
+<!-- ===== END NYE TABLE PLAN ===== -->
