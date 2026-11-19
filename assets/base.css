@@ -3612,8 +3612,3 @@ details-disclosure > details {
 .multicolumn-card__info .link.animate-arrow {
   margin-top: auto;
 }
-
-.content-for-layout {
-  position: relative;
-  z-index: 100;
-}
