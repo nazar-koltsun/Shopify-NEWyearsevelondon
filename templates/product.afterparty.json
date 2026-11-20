@@ -39,12 +39,6 @@
           "type": "quantity_selector",
           "settings": {}
         },
-        "custom_liquid_QxV7pa": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<div class=\"table-plan\">\n{% render 'table-plan-popup' %} \n</div>\n\n<style>\n  .table-plan {\n    text-align: left;\n  }\n  [class*=\"custom_liquid\"]:has(> .table-plan) {\n    padding: 20px !important;\n  }\n</style>"
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -107,7 +101,6 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "custom_liquid_QxV7pa",
         "buy_buttons",
         "description",
         "collapsible_tab_p4b7C3",
