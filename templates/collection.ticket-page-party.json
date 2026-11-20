@@ -289,10 +289,21 @@
       "settings": {
         "html_content": ""
       }
+    },
+    "custom_liquid_Tgz4EM": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"table-plan\">\n{% render 'table-plan-popup' %} \n</div>\n\n<style>\n  .table-plan {\n    text-align: center;\n  }\n\n  [class*=\"custom_liquid\"]:has(> .table-plan) {\n    padding: 20px !important;\n  }\n</style>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "rich_text_FFyTRR",
+    "custom_liquid_Tgz4EM",
     "collection_product_cards_JMcx6g",
     "banner",
     "product-grid",
