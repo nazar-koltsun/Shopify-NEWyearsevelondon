@@ -42,7 +42,7 @@
         "custom_liquid_4PtKPh": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div class=\"table-plan\">\n{% render 'table-plan-popup' %} \n</div>\n\n<style>\n  .table-plan {\n    text-align: left;\n  }\n\n  [class*=\"custom_liquid\"]:has(> .table-plan) {\n    padding: 20px !important;\n  }\n</style>"
+            "custom_liquid": "<div class=\"table-plan\">\n{% render 'table-plan-popup' %} \n</div>\n\n<style>\n  .table-plan {\n    text-align: left;\n  }\n  [class*=\"custom_liquid\"]:has(> .table-plan) {\n    padding: 20px !important;\n  }\n</style>"
           }
         },
         "buy_buttons": {
